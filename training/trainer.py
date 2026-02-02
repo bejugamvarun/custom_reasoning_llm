@@ -75,7 +75,7 @@ class TrainingConfig:
     
     # Mixed precision
     use_amp: bool = True                # Use automatic mixed precision
-    amp_dtype: str = "float16"          # "float16" or "bfloat16"
+    amp_dtype: str = "bfloat16"          # "float16" or "bfloat16"
     
     # Memory optimization
     gradient_checkpointing: bool = False  # Trade compute for memory

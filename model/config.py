@@ -187,6 +187,7 @@ class ModelConfig:
 # Preset configurations for different VRAM budgets
 CONFIGS = {
     "tiny": ModelConfig(
+        vocab_size=50257,
         hidden_size=256,
         num_layers=4,
         num_attention_heads=4,
@@ -195,6 +196,7 @@ CONFIGS = {
         max_position_embeddings=256,
     ),
     "small": ModelConfig(
+        vocab_size=50257,
         hidden_size=512,
         num_layers=6,
         num_attention_heads=8,
@@ -203,6 +205,7 @@ CONFIGS = {
         max_position_embeddings=512,
     ),
     "medium": ModelConfig(
+        vocab_size=50257,
         hidden_size=768,
         num_layers=8,
         num_attention_heads=12,
